@@ -5,9 +5,10 @@ import Prac  from './Prac'
 function App() {
   const [count, setCount] = useState(0)
 
+  let a="let's start"
   return (
     <>
-   <h1>Hello from React and Vite</h1>
+   <h1>Hello!! {a} from React and Vite</h1>
     <Prac/>
     </>
   )
