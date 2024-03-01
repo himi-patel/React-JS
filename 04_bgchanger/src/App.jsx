@@ -10,7 +10,7 @@ function App() {
     <>
    
         <div className='w-full h-screen duration-500 ' style={{backgroundColor: color}}>
-      
+        git config --global user.name
         <div className='fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2'>
         <div className='flex flex-wrap justify-center gap-5 shadow-lg bg-white px-3 py-2 rounded-3xl'>
           <button onClick={()=>setColor("red")} className='outline-none rounded-3xl px-5 text-white' style={{backgroundColor:"red"}}>Red</button>
