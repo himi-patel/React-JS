@@ -17,7 +17,13 @@ const addvalue=()=>
     
   }
   counter=counter+1
-  setcounter(counter)
+  // counter=counter+1
+  // counter=counter+1
+  // counter=counter+1
+  setcounter(counter=>counter+1)
+  setcounter(counter=>counter+1)
+  setcounter(counter=>counter+1)
+  setcounter(counter=>counter+1)
 console.log("Clicked",counter)
 }
 
