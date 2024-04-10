@@ -34,12 +34,13 @@ const reactelement=React.createElement(
     'a',
     {href:"https://google.com", target:"_blank"},
     'click here',
-    // anothername
+    anothername
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
 //    Appj()
+//  anotherelement
 // reactelement
  <App/> 
 // reactelement

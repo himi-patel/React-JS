@@ -16,14 +16,18 @@ const addvalue=()=>
     alert("not more to add");
     
   }
-  counter=counter+1
+  
   // counter=counter+1
   // counter=counter+1
   // counter=counter+1
-  setcounter(counter=>counter+1)
-  setcounter(counter=>counter+1)
-  setcounter(counter=>counter+1)
-  setcounter(counter=>counter+1)
+  // counter=counter+1
+  else
+  {
+  setcounter(counter=>counter+1) 
+  }
+  // setcounter(counter=>counter+1)
+  // setcounter(counter=>counter+1)
+  // setcounter(counter=>counter+1)
 console.log("Clicked",counter)
 }
 
