@@ -39,7 +39,7 @@ const reactelement=React.createElement(
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
-//    Appj()
+  //  Appj()
 //  anotherelement
 // reactelement
  <App/> 
