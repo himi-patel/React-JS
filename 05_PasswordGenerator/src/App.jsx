@@ -43,7 +43,7 @@ useEffect(()=>
   return (
     <>
     <h1 className='text-center text-white'>Password Generator</h1>
-    <div className='w-full shadow-md rounded-lg p-6 my-8  text-orange-500 bg-gray-700'>
+    <div className='w-full shadow-md rounded-lg p-5 my-8  text-orange-500 bg-gray-700'>
       <div className='flex flex-col shadow m-auto rounded-lg overflow-hidden bg-white p-4 gap-3  '>
         <div className='flex items-center'>
   <input type="text" value={password} className='outline-none w-full py-1 px-4  bg-white text-black"' style={{width:"500px"}} placeholder="password" readOnly
