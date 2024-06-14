@@ -1,14 +1,15 @@
 import React,{useEffect} from 'react'
 import { useState} from 'react'
-
+import { useLoaderData } from "react-router-dom";
 
 
 function Github() {
 
-const [data,setdata]=useState([])
-    useEffect(()=>{
-        fetch("https://api.github.com/users/himi-patel").then((res)=>res.json()).then((res)=>setdata(res))
-    },[])
+    const data=useLoaderData()
+// const [data,setdata]=useState([])
+//     useEffect(()=>{
+//         fetch("https://api.github.com/users/himi-patel").then((res)=>res.json()).then((res)=>setdata(res))
+    // },[])
   return (
     <>
     
@@ -20,4 +21,10 @@ const [data,setdata]=useState([])
   )
 }
 
-export default Github
+export default Github;
+
+
+export const githubInfoLoader=async()=>{
+    const res=await fetch("https://api.github.com/users/himi-patel")
+    return res.json()
+}
