@@ -1,4 +1,5 @@
 import React from 'react'
+import { Logoholder } from '../CommonComponents'
 
 export default function For_partners() {
   return (
@@ -53,6 +54,7 @@ export default function For_partners() {
             </div>
             </div>
     </section>
+    <Logoholder/>
 
     <section className="w-full bg-[#f2ebe5] p-[100px] mt-[100px]">
         <div className="container mx-auto">

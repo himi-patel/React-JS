@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Author_Resources, Logoholder,Peak_of_Week,AboutGoodzy} from '../CommonComponents/index'
 export default function Home() {
   return (
     <>
@@ -25,36 +25,7 @@ export default function Home() {
     </div>
   </section>
 
-  <section className="w-full px-5 my-[100px]">
-    <div
-      className="container mx-auto flex items-center justify-around lg:flex-row md:flex-col md:gap-10 max-[770px]:flex-col max-[770px]:gap-y-10"
-    >
-      <div className="">
-        <img src="img/icon_1.png" className="w-[60px] h-[60px]" alt="" />
-        <h4 className="font-semibold my-4 text-2xl">500+ recipes</h4>
-        <p>
-          We've developed over 500 recipes. <br />
-          Follow for some more!
-        </p>
-      </div>
-      <div>
-        <img src="img/icon_2.png" className="w-[60px] h-[60px]" alt="" />
-        <h4 className="font-semibold my-4 text-2xl">10 Ingredients</h4>
-        <p>
-          All our recipes require not more than 10 <br />
-          simple ingredients
-        </p>
-      </div>
-      <div>
-        <img src="img/icon_3.png" className="w-[60px] h-[60px]" alt="" />
-        <h4 className="font-semibold my-4 text-2xl">Weekly updates</h4>
-        <p>
-          We post new recipes every week, stay <br />
-          tuned for updates!
-        </p>
-      </div>
-    </div>
-  </section>
+  <AboutGoodzy/>
 
   <section className="w-full my-[100px]">
     <div className="container mx-auto">
@@ -117,36 +88,9 @@ export default function Home() {
     </div>
   </section>
 
-  <section className="w-full my-[100px]">
-    <div className="container mx-auto flex">
-      <div
-        className="w-1/2 bg-[#a76e63] flex flex-col justify-center items-center text-white gap-7 text-center"
-      >
-        <p className="font-semibold text-sm">PICK OF THE WEEK</p>
-        <h2 className="text-5xl font-bold font-[dmserif]">
-          Peanut Butter & <br />
-          Berries Parfe
-        </h2>
-        <span
-          >This nourishing recipe is perfect for all people of all<br />
-          ages! It is quick and easy to make, but packed with <br />flavour
-          and is sure to impress your guests.</span
-        >
-        <button
-          className="border bg-transparent border-white px-5 py-2 font-semibold text-white font-sans hover:bg-white hover:text-black duration-500 ease-out"
-        >
-          View recipe<i className="ri-arrow-right-s-line hover:text-white"></i>
-        </button>
-      </div>
-      <div className="w-1/2">
-        <img
-          src="img/PickOfWeek.jpg"
-          alt=""
-          className="h-[556px] w-full object-cover"
-        />
-      </div>
-    </div>
-  </section>
+
+  <Peak_of_Week/>
+
 
   <section className="w-full my-[100px]">
     <div className="container mx-auto">
@@ -232,57 +176,7 @@ export default function Home() {
     </div>
   </section>
 
-  <section className="w-full my-[100px]">
-    <div className="container mx-auto">
-      <h1
-        className="font-[dmserif] text-5xl font-semibold text-left text-[#23262e] my-10 mb-[70px]"
-      >
-        Author Resources
-      </h1>
-      <div className="flex flex-col ">
-        <div className=" flex justify-between" >
-          <div className="flex items-center w-1/2 justify-between gap-5 ">
-            <img src="img/Resource_1.jpg" alt="" width="160px " height="160px"/>
-            <div className="flex flex-col gap-4.6">
-              <h4 className="font-semibold text-2xl">Cookbook</h4>
-              <p className="text-[#4f5666] text-sm my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              <a href="#" className="underline text-[#a76e63] font-semibold text-sm">Learn more</a>
-            </div>
-          </div>
-          <div className="flex items-center w-1/2 m-4 gap-5">
-            <img src="img/Resource_2.jpg" alt="" width="160px " height="160px" />
-            <div className="flex flex-col gap-4.6">
-              <h4 className="font-semibold text-2xl ">About</h4>
-              <p className="text-[#4f5666] text-sm my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              <a href="#" className="underline text-[#a76e63] font-semibold text-sm">Learn more</a>
-            </div>
-          </div>
-        </div>
-
-        <hr style={{height:"1px",borderWidth:"0",color:"rgb(0, 0, 0)",backgroundColor:"gray",margin:"50px 0px"}} />
-        <div className=" flex justify-between mb-10" >
-          <div className="flex w-1/2 items-center justify-between gap-5 ">
-            <img src="img/Resource_3.jpg" alt="" width="160px " height="160px" className="object-cover"/>
-            <div className="flex flex-col gap-4.6">
-              <h4 className="font-semibold text-2xl">Cookbook</h4>
-              <p className="text-[#4f5666] text-sm my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              <a href="#" className="underline text-[#a76e63] font-semibold text-sm">Learn more</a>
-            </div>
-          </div>
-          <div className="flex w-1/2 items-center justify-between m-4 gap-5">
-            <img src="img/Resource_4.jpg" alt="" width="160px " height="160px"  />
-            <div className="flex flex-col gap-4.6">
-              <h4 className="font-semibold text-2xl ">About</h4>
-              <p className="text-[#4f5666] text-sm my-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              <a href="#" className="underline text-[#a76e63] font-semibold text-sm">Learn more</a>
-            </div>
-          </div>
-        </div>
-       
-    </div>
-    </div>
-
-  </section>
+ <Author_Resources/>
 
 
 
@@ -322,28 +216,7 @@ export default function Home() {
 </section>
 
 
-  <section className="w-full my-[100px]">
-    <div className="container mx-auto">
-      <h1
-      className="text-5xl font-semibold text-center text-[#23262e] my-10 mb-[70px]"
-    >
-    Our Partners
-    </h1>
-    <div className="flex flex-col gap-5 text-3xl font-semibold">
-      <div className="flex justify-between ">
-        <div>Logoholder</div>
-        <div>Logoholder</div>
-        <div>Logoholder</div>
-      </div>
-      <div className="flex justify-between">
-        <div>Logoholder</div>
-        <div>Logoholder</div>
-        <div>Logoholder</div>
-      </div>
-    </div>
-    </div>
-
-  </section>
+  <Logoholder/>
 
 </>
   )

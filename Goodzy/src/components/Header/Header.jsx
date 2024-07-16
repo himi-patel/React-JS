@@ -25,7 +25,7 @@ export default function Header() {
 
     </ul>
     <Link to="/" className="flex items-center flex-col gap-2">
-    <img src="logos/Goodzy.svg" className="font-light" alt="Goodzy Logo" style={{ marginRight: '10px' }} />
+    <img src="logos/Goodzy.svg" className="font-light" alt="Goodzy Logo" style={{ marginRight: '10px',width:"150px",height:"28px" }} />
     <span>Easy & Healthy Recipes</span>
                     </Link>
     <div

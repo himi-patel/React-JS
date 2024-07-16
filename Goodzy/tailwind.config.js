@@ -3,7 +3,10 @@ export default {
   content: [ "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
-    extend: {},
+    extend: {colors: {
+      'custom-text': '#23262e',
+    },
+},
   },
   plugins: [],
 }
